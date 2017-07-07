@@ -1,10 +1,10 @@
 <head>
-  <title>Zimmer & Cassol</title>
+  <title>Bon Voyage</title>
 </head>
 
 
 <body>
-	
+
 </body>
 
 <template name="index">
@@ -15,7 +15,7 @@
 </template>
 
 <template name = "carrinho">
-    {{> top}} 
+    {{> top}}
     {{> cart}}
     {{> footer}}
 </template>
@@ -40,24 +40,24 @@
                                         </tr>
                                     </thead>
                                     <tfoot>
-                                        <td colspan="5"><input type="submit" value="Finalizar Compra"> </td>   
+                                        <td colspan="5"><input type="submit" value="Finalizar Compra"> </td>
                                     </tfoot>
                                     <tbody>
                                             {{#each images}}
-                                            <tr class="cart_item">    
+                                            <tr class="cart_item">
                                                 <td class="product-remove">
-                                                    <a title="Remover este item" class="remove" href="carrinho.html">×</a> 
+                                                    <a title="Remover este item" class="remove" href="carrinho.html">×</a>
                                                 </td>
 
                                                 <td class="product-thumbnail">
                                                     <a href="#"><img width="145" height="145" src="{{src}}"></a>
                                                 </td>
                                                 <td class="product-name">
-                                                    <a href="#">{{title}}</a> 
+                                                    <a href="#">{{title}}</a>
                                                 </td>
 
                                                 <td class="product-price">
-                                                    <span class="amount"> R$ {{price}}</span> 
+                                                    <span class="amount"> R$ {{price}}</span>
                                                 </td>
 
                                                 <td class="product-quantity">
@@ -69,7 +69,7 @@
                                                 </td>
 
                                                 <td class="product-subtotal">
-                                                    <span class="amount"> R$ {{price}}</span> 
+                                                    <span class="amount"> R$ {{price}}</span>
                                                 </td>
                                             </tr>
                                             {{/each}}
@@ -97,13 +97,13 @@
                                             <td>Frete Grátis</td>
                                         </tr>
 
-                                        
+
                                     </tbody>
                                 </table>
                             </div>
-                        </div>                        
+                        </div>
                 </div>
-           </div>   
+           </div>
 
 </template>
 
@@ -113,33 +113,33 @@
             <div class="container">
                 <div class="row">
 
-                 <!-- 6 Colunas para quem somos e atendimento--> 
+                 <!-- 6 Colunas para quem somos e atendimento-->
                     <div class="col-md-6 ">
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Empresa    
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Empresa
                             <span class="caret"></span></button>
-                            <ul class="dropdown-menu">                                                                <!-- Aqui contém um Dropdown--> 
+                            <ul class="dropdown-menu">                                                                <!-- Aqui contém um Dropdown-->
                                 <li><a href="quemsomos.html"><i class="fa fa-user"></i> Quem somos</a></li>
-                                <li><a href="#"><i class="fa fa-user"></i> Atendimento</a></li>   <!-- Glyphicons--> 
+                                <li><a href="#"><i class="fa fa-user"></i> Atendimento</a></li>   <!-- Glyphicons-->
                             </ul>
                         </div>
                     </div>
-                    <!-- 6 Colunas para funções do usuário--> 
+                    <!-- 6 Colunas para funções do usuário-->
                     <div class="col-md-6" off>
                         <div class="container">
                             <div class="user-menu">
                                 <ul>
                                     <li><a>{{> loginButtons}}</a></li>
                                     <li><a href="#"><i class="fa fa-truck fa-2x"></i> Pedidos</a></li>
-                                    <li><a href="carrinho"><i class="fa fa-shopping-cart fa-2x"> </i> Carrinho</a></li>      
+                                    <li><a href="carrinho"><i class="fa fa-shopping-cart fa-2x"> </i> Carrinho</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
-    </nav> 
+        </div>
+    </nav>
 
          <!-- Logo e Buscar-->
         <div class="site-branding-area">
@@ -153,14 +153,14 @@
                     <div class="col-sm-6">
                         <input class="form-control" type="text" placeholder="Buscar">
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
         </div> <!-- Fim Logo e Buscar -->
 
 
-        <!-- Navegação -->    
+        <!-- Navegação -->
         <div class="mainmenu-area">
             <div class="container">
                 <div class="row">
@@ -171,7 +171,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                    </div> 
+                    </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="#">Categorias</a></li>
@@ -184,7 +184,7 @@
                             <li><a href="#">Whisky</a></li>
                             <li><a href="#">Promoções</a></li>
                         </ul>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div> <!-- End navegação-->
@@ -208,7 +208,7 @@
                 <div class="item">
                   <img src="royal_salute.jpg" alt="Imagem da promoção de 21 anos Royal Salute">
                 </div>
-              
+
             </div>
 
             <!-- Controles Slides -->
@@ -224,15 +224,15 @@
 </template>
 
 <template name="imagens">
-	
-		
+
+
         		<button class="btn btn-success" id="mostra_janela">Inserir Produto</button>
-    	 
+
 		<div class="row">
 			<div id="container-products">
 				{{#each images}}
 
-				<div class="col-md-3 col-sm-4 col-xs-12">  
+				<div class="col-md-3 col-sm-4 col-xs-12">
                     <div id="product">
                             <img class="img-responsive" src="{{src}}" alt="{{alt}}">
                             <figcaption>{{title}}<p> R${{price}} </p></figcaption>
@@ -243,7 +243,7 @@
             </div>
 		</div>
 
-	
+
 </template>
 
 
@@ -279,7 +279,7 @@
 				    <input type="text" class="form-control" id="well" placeholder="Well">
 				  </div>
 				  <button type="submit" class="btn btn-success">Enviar</button>
-			 	</form>                   
+			 	</form>
                     </div>
                     <div class="modal-footer">
                         <button data-dismiss="modal" class="btn btn-warning">Fechar</button>
@@ -287,17 +287,17 @@
                 </div>
             </div>
         </div>
-    </div>                                
+    </div>
 </template>
 
 <template name="footer">
-    
-     <!-- Footer -->            
+
+     <!-- Footer -->
       <div class="footer-top-area">
         <div class="zigzag-bottom"></div>
              <div class="container">
                 <div class="row">
-                    <!-- Divisão das colunas -->    
+                    <!-- Divisão das colunas -->
                     <div class="col-md-5 col-sm-6">
                         <div class="footer-about-us">
                             <h2><span>Zimmer&Cassol</span></h2>
@@ -310,7 +310,7 @@
                         </div>
                     </div>
 
-                    <!-- Divisão das colunas --> 
+                    <!-- Divisão das colunas -->
                     <div class="col-md-3 col-sm-6">
                         <div class="footer-menu">
                             <h2 class="footer-wid-title">Navegação</h2>
@@ -319,11 +319,11 @@
                                 <li><a href="#">Minha Conta</a></li>
                                 <li><a href="quemsomos.html">Nossa História</a></li>
                                 <li><a href="#">Contato</a></li>
-                            </ul>                        
+                            </ul>
                         </div>
                     </div>
 
-                     <!-- Divisão das colunas --> 
+                     <!-- Divisão das colunas -->
                     <div class="col-md-3 col-sm-6">
                         <div class="footer-menu">
                             <h2 class="footer-wid-title">Categorias</h2>
@@ -335,14 +335,14 @@
                                 <li><a href="#">Vinho</a></li>
                                 <li><a href="#">Vodka</a></li>
                                 <li><a href="#">Whisky</a></li>
-                            </ul>                        
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div> <!-- End footer top area -->
-        
-        <!-- Copyright --> 
+
+        <!-- Copyright -->
         <div class="footer-bottom-area">
             <div class="container">
                 <div class="row">
